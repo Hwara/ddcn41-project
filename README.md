@@ -182,10 +182,10 @@
 
 | 이슈                              | 원인                          | 해결                          | 상세                                                                                                                                   |
 | ------------------------------- | --------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Terraform depends_on NAT 준비 미보장 | 생성 완료 ≠ 기능 활성화              | Flag 파일 + remote-exec       | [→](https://github.com/Hwara/ddcn41-project#1-terraform-%EC%9D%98%EC%A1%B4%EC%84%B1-%EA%B4%80%EB%A6%AC-%EB%AC%B8%EC%A0%9C)           |
-| Calico CNI 적용 시 Pod 간 통신 불가     | BGP/VXLAN 포트 차단             | TCP 179, UDP 4789 허용        | [→](https://github.com/Hwara/ddcn41-project#2-calico-cni-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%86%B5%EC%8B%A0-%EC%9E%A5%EC%95%A0) |
-| AWS LB Controller 라우팅 실패        | 태그 누락 및 providerID 수동 설정 필요 | 태그 및 providerID 설정          | [→](https://github.com/Hwara/ddcn41-project#3-aws-load-balancer-controller-target-%EB%93%B1%EB%A1%9D-%EC%8B%A4%ED%8C%A8)             |
-| ECR Private 이미지 Pull 401 오류     | ECR 토큰 만료                   | Kubelet Credential Provider | [→](https://github.com/Hwara/ddcn41-project#5-ecr-private-%EC%9D%B4%EB%AF%B8%EC%A7%80-pull-%EC%8B%A4%ED%8C%A8-401-unauthorized)      |
+| Terraform depends_on NAT 준비 미보장 | 생성 완료 ≠ 기능 활성화              | Flag 파일 + remote-exec       | [→](https://github.com/Hwara/ddcn41-infra-v3/tree/5000c654737e0bdf02bffe1e184e57d16286c6cb#1-terraform-%EC%9D%98%EC%A1%B4%EC%84%B1-%EA%B4%80%EB%A6%AC-%EB%AC%B8%EC%A0%9C)           |
+| Calico CNI 적용 시 Pod 간 통신 불가     | BGP/VXLAN 포트 차단             | TCP 179, UDP 4789 허용        | [→](https://github.com/Hwara/ddcn41-infra-v3/tree/5000c654737e0bdf02bffe1e184e57d16286c6cb#2-calico-cni-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%86%B5%EC%8B%A0-%EC%9E%A5%EC%95%A0) |
+| AWS LB Controller 라우팅 실패        | 태그 누락 및 providerID 수동 설정 필요 | 태그 및 providerID 설정          | [→](https://github.com/Hwara/ddcn41-infra-v3/tree/5000c654737e0bdf02bffe1e184e57d16286c6cb#3-aws-load-balancer-controller-target-%EB%93%B1%EB%A1%9D-%EC%8B%A4%ED%8C%A8)             |
+| ECR Private 이미지 Pull 401 오류     | ECR 토큰 만료                   | Kubelet Credential Provider | [→](https://github.com/Hwara/ddcn41-infra-v3/tree/5000c654737e0bdf02bffe1e184e57d16286c6cb#5-ecr-private-%EC%9D%B4%EB%AF%B8%EC%A7%80-pull-%EC%8B%A4%ED%8C%A8-401-unauthorized)      |
 
 ## 프로젝트 리뷰
 
