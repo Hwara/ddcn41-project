@@ -1,7 +1,6 @@
 # 공연 티켓팅 서비스 및 운영 효율화를 위한 백오피스 시스템
 
 > 공연 티켓팅 서비스 및 운영 효율화를 위한 백오피스 시스템을 3단계로 개발/보안/자동화한 클라우드 네이티브 프로젝트
----
 
 ## 프로젝트 개요
 
@@ -12,8 +11,6 @@
 
 - 부트캠프 우수 프로젝트 선정
 - 부트캠프 우수 수료생 선정 (총 11명 중 1인)
-
----
 
 ## 전체 인프라 아키텍처
 
@@ -40,8 +37,6 @@
 | ddcn41-frontend | React 기반 관리자/사용자 UI     | [→](https://github.com/Hwara/ddcn41-frontend-v3.git) |
 | ddcn41-backend  | Spring Boot REST API    | [→](https://github.com/Hwara/ddcn41-backend-v3.git)  |
 | ddcn41-Infra    | Terraform, K8s, Ansible | [→](https://github.com/Hwara/ddcn41-infra-v3.git)    |
-
----
 
 ## 프로젝트 구성 (3단계)
 
@@ -183,8 +178,6 @@
 - GitHub OIDC 인증 적용으로 AWS Access Key 완전 제거
 - Self-managed K8s 5개 핵심 이슈 직접 해결 (Terraform 의존성 관리, Calico CNI, AWS LB Controller, ECR 인증)
 
----
-
 ## 주요 트러블슈팅
 
 | 이슈                              | 원인                          | 해결                          | 상세                                                                                                                                   |
@@ -193,8 +186,6 @@
 | Calico CNI 적용 시 Pod 간 통신 불가     | BGP/VXLAN 포트 차단             | TCP 179, UDP 4789 허용        | [→](https://github.com/Hwara/ddcn41-project#2-calico-cni-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%ED%86%B5%EC%8B%A0-%EC%9E%A5%EC%95%A0) |
 | AWS LB Controller 라우팅 실패        | 태그 누락 및 providerID 수동 설정 필요 | 태그 및 providerID 설정          | [→](https://github.com/Hwara/ddcn41-project#3-aws-load-balancer-controller-target-%EB%93%B1%EB%A1%9D-%EC%8B%A4%ED%8C%A8)             |
 | ECR Private 이미지 Pull 401 오류     | ECR 토큰 만료                   | Kubelet Credential Provider | [→](https://github.com/Hwara/ddcn41-project#5-ecr-private-%EC%9D%B4%EB%AF%B8%EC%A7%80-pull-%EC%8B%A4%ED%8C%A8-401-unauthorized)      |
-
----
 
 ## 프로젝트 리뷰
 
