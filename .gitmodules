@@ -1,0 +1,9 @@
+[submodule "ddcn41-frontend-v3"]
+	path = ddcn41-frontend-v3
+	url = https://github.com/Hwara/ddcn41-frontend-v3.git
+[submodule "ddcn41-backend-v3"]
+	path = ddcn41-backend-v3
+	url = https://github.com/Hwara/ddcn41-backend-v3.git
+[submodule "ddcn41-infra-v3"]
+	path = ddcn41-infra-v3
+	url = https://github.com/Hwara/ddcn41-infra-v3.git
